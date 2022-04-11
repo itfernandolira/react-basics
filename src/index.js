@@ -1,6 +1,6 @@
 import ReactDOM from 'react-dom'
 
 ReactDOM.render(
-    'Hello React!',
+    '<div>Hello React!</div>',
     document.getElementById('root')
     );
