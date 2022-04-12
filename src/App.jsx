@@ -5,8 +5,9 @@ import './App.css'
 import ComParametro from './components/basic/ComParametro'
 import Fragmento from './components/basic/Fragmento'
 import Card from './components/layout/Card'
+import Familia from './components/basic/Familia'
 
-export default () =>
+const app = () =>
     <div className='App'>
         <div className='Cards'>
             <Card title="Primeiro" color="#FFBF00">
@@ -21,5 +22,11 @@ export default () =>
             <Card title="React Fragment" color="#9FE2BF">
                 <Fragmento></Fragmento>
             </Card>
+
+            <Card title="Membros da Família" color="#008000">
+                <Familia apelido="Silva"></Familia>
+            </Card>
         </div>
     </div>
+
+export default app;
