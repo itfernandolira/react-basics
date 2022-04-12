@@ -1,0 +1,19 @@
+.Card {
+    background-color: cornflowerblue;
+    border: 3px solid cornflowerblue;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.Card .Title {
+    padding: 5px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.Card .Content {
+    background-color: white;
+    color: black;
+    padding: 10px;
+}
