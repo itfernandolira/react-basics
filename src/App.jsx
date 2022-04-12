@@ -9,16 +9,16 @@ import Card from './components/layout/Card'
 export default () =>
     <div className='App'>
         <div className='Cards'>
-            <Card title="Primeiro">
+            <Card title="Primeiro" color="#FFBF00">
                 <Primeiro></Primeiro>
                 <Primeiro></Primeiro>
             </Card>
 
-            <Card title="Com parametro">
+            <Card title="Com parametro" color="#DE3163">
                 <ComParametro titulo="Classificações" aluno="Pedro" nota={16.8}></ComParametro>
             </Card>
             
-            <Card title="Com parametro">
+            <Card title="React Fragment" color="#9FE2BF">
                 <Fragmento></Fragmento>
             </Card>
         </div>
