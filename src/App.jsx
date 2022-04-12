@@ -6,6 +6,7 @@ import ComParametro from './components/basic/ComParametro'
 import Fragmento from './components/basic/Fragmento'
 import Card from './components/layout/Card'
 import Familia from './components/basic/Familia'
+import FamiliaMembro from './components/basic/FamiliaMembro'
 
 const app = () =>
     <div className='App'>
@@ -24,7 +25,11 @@ const app = () =>
             </Card>
 
             <Card title="Membros da Família" color="#008000">
-                <Familia apelido="Silva"></Familia>
+                <Familia apelido="Silva">
+                    <FamiliaMembro nome="Pedro"></FamiliaMembro>
+                    <FamiliaMembro nome="Ana"></FamiliaMembro>
+                    <FamiliaMembro nome="Rui"></FamiliaMembro>
+                </Familia>
             </Card>
         </div>
     </div>
