@@ -10,6 +10,7 @@ import FamiliaMembro from './components/basic/FamiliaMembro'
 import ListaAlunos from './components/repeat/ListaAlunos'
 import ParOuImpar from './components/conditional/ParOuImpar'
 import UserInfo from './components/conditional/UserInfo'
+import ElementParent from './components/binding/ElementParent'
 
 const app = () =>
     <div className='App'>
@@ -42,6 +43,10 @@ const app = () =>
             <Card title="Condicional #1" color="#FF00FF">
                 <ParOuImpar numero={16} />
                 <UserInfo user={{ nome: 'Carlos'}} />
+            </Card>
+
+            <Card title="Binding" color="#DFFF00">
+                <ElementParent></ElementParent>
             </Card>
         </div>
     </div>
