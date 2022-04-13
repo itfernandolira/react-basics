@@ -1,15 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import ElementChild from "./ElementChild";
 
-const elementParent = props => {
-    let nome = '?';
-    let idade = 0;
-    let nerd = false;
+const ElementParent = props => {
+    const [nome, setNome] = useState('?');
+    const [idade, setIdade] = useState(0);
+    const [nerd, setNerd] = useState(false);
 
     function parentInfo(nomeParam, idadeParam, nerdParam) {
-        nome = nomeParam;
-        idade = idadeParam;
-        nerd = nerdParam;
+        setNome(nomeParam);
+        setIdade(idadeParam);
+        setNerd(nerdParam);
 
         console.log(nome,idade,nerd);
     }
@@ -25,4 +25,4 @@ const elementParent = props => {
     )
 }
 
-export default elementParent;
+export default ElementParent;
