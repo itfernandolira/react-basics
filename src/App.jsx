@@ -8,6 +8,8 @@ import Card from './components/layout/Card'
 import Familia from './components/basic/Familia'
 import FamiliaMembro from './components/basic/FamiliaMembro'
 import ListaAlunos from './components/repeat/ListaAlunos'
+import ParOuImpar from './components/conditional/ParOuImpar'
+import UserInfo from './components/conditional/UserInfo'
 
 const app = () =>
     <div className='App'>
@@ -35,6 +37,11 @@ const app = () =>
 
             <Card title="Repetição" color="#008080">
                 <ListaAlunos />
+            </Card>
+
+            <Card title="Condicional #1" color="#FF00FF">
+                <ParOuImpar numero={16} />
+                <UserInfo user={{ nome: 'Carlos'}} />
             </Card>
         </div>
     </div>
