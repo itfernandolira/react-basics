@@ -7,6 +7,7 @@ import Fragmento from './components/basic/Fragmento'
 import Card from './components/layout/Card'
 import Familia from './components/basic/Familia'
 import FamiliaMembro from './components/basic/FamiliaMembro'
+import ListaAlunos from './components/repeat/ListaAlunos'
 
 const app = () =>
     <div className='App'>
@@ -30,6 +31,10 @@ const app = () =>
                     <FamiliaMembro nome="Ana"></FamiliaMembro>
                     <FamiliaMembro nome="Rui"></FamiliaMembro>
                 </Familia>
+            </Card>
+
+            <Card title="Repetição" color="#008080">
+                <ListaAlunos />
             </Card>
         </div>
     </div>
