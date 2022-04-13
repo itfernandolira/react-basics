@@ -11,6 +11,7 @@ import ListaAlunos from './components/repeat/ListaAlunos'
 import ParOuImpar from './components/conditional/ParOuImpar'
 import UserInfo from './components/conditional/UserInfo'
 import ElementParent from './components/binding/ElementParent'
+import Input from './components/forms/Input'
 
 const app = () =>
     <div className='App'>
@@ -47,6 +48,10 @@ const app = () =>
 
             <Card title="Binding" color="#DFFF00">
                 <ElementParent></ElementParent>
+            </Card>
+
+            <Card title="Controlled Component" color="#6495ED">
+                <Input></Input>
             </Card>
         </div>
     </div>
