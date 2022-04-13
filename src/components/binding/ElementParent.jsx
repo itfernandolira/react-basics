@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import ElementChild from "./ElementChild";
+import If from '../conditional/If';
 
 const ElementParent = props => {
     const [nome, setNome] = useState('?');
@@ -17,9 +18,11 @@ const ElementParent = props => {
     return (
         <div>
             <p>Parent</p>
-            <span>{nome} </span>
-            <span><strong>{idade} </strong></span>
-            <span>{ nerd ? 'Verdadeiro!' : 'Falso!'}</span>
+            <If teste={idade!=0}>
+                <span>{nome} </span>
+                <span><strong>{idade} </strong></span>
+                <span>{ nerd ? 'Verdadeiro!' : 'Falso!'}</span>
+            </If>
             <ElementChild aoClicar={parentInfo}></ElementChild>
         </div>
     )
